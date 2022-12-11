@@ -5,6 +5,7 @@
 *.pyc
 *~
 *.bag
+scripts/calibration/*
 
 *.user
 .vscode 
