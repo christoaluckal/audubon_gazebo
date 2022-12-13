@@ -32,7 +32,7 @@ def getmtx(img_list):
     objpoints = [] # 3d point in real world space
     imgpoints = [] # 2d points in image plane.
 
-    image_num = 300
+    image_num = 100
     ret0=[]
     j=0
     for i,frame in enumerate(img_list):
@@ -114,7 +114,6 @@ def talker():
     rospy.Subscriber("/joy", Joy, callback)
     rospy.Subscriber("/car_1/camera/right/image_raw",Image,imgcallback)
     rate = rospy.Rate(10)
-
 
     while not rospy.is_shutdown():
         rate.sleep()
